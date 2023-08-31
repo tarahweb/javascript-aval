@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="sevom.css">
+</head>
+
+<body>
+<section>
+    <div class="circle"></div>
+<header>
+    <a href="#" class="logo"><img src="" alt=""></a>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">What s New</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</header>
+<div class="content">
+<div class="textBox">
+<h2>It s not just Coffee <br>It s <span>Starbucks</span></h2>
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing 
+laudantium dolor magnam, consequaturquam inventore 
+delectus nisi labore ex at earum.</p>
+<a href="#">Learn More</a>
+</div>
+<div class="imgbox">
+<img src="sevom/DC_202106_0460_LargeChocolateCone_832x472_1-3-product-tile-desktop.jpg" class="starbucks">
+</div>
+</div>
+<ul class="thumb">
+<li><img class="er" src="sevom/DC_202106_0460_LargeChocolateCone_832x472_1-3-product-tile-desktop.jpg" onclick="imgSlider('DC_202106_0460_LargeChocolateCone_832x472_1-3-product-tile-desktop');changeCircleColor('#017143') "></li>
+<li><img class="er" src="sevom/DC_202106_0336_LargeVanillaCone_832x472_1-3-product-tile-desktop.jpg" onclick="imgSlider('DC_202106_0336_LargeVanillaCone_832x472_1-3-product-tile-desktop');changeCircleColor('#eb7495') "></li>
+<li><img class="er" src="sevom/DC_202106_0336_LargeVanillaCone_832x472_1-3-product-tile-desktop.jpg" onclick="imgSlider('DC_202106_0336_LargeVanillaCone_832x472_1-3-product-tile-desktop');changeCircleColor('#d752b1') "></li>
+</ul>
+<ul class="sci">
+<li><a href="#"><img class="qw" src="sevom/images.jpg" alt=""></a></li>
+<li><a href="#"><img class="qw" src="sevom/twitter-black.jpg" alt=""></a></li>
+<li><a href="#"><img class="qw" src="sevom/download.png" alt=""></a></li>
+</ul>
+</section>
+<script type="text/javascript">
+function imgSlider(anything){
+    document.querySelector('.starbucks').src = anything;
+}
+function changeCircleColor(color){
+    const circle = document.querySelector('.circle');
+    circle.style.background = color ;
+}
+    
+
+</script>
+</body>
+
+</html>
